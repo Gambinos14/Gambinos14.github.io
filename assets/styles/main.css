@@ -1,1 +1,19 @@
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
+ul {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+}
+
+nav {
+  height: 5vh;
+}
+
+h1 {
+  margin-top: 50%;
+}
