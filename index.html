@@ -7,66 +7,72 @@
       <link href="assets/styles/main.css" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     </head>
     <body>
       <header>
-        <nav>
-          <ul>
-            <li>About Me</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+        <nav class="mynav">
+          <ul class="navlist">
+            <li class="navitems">About Me</li>
+            <li class="navitems">Skills</li>
+            <li class="navitems">Projects</li>
+            <li class="navitems">Contact</li>
           </ul>
         </nav>
-        <h1>STEFANO GAMBINO</h1>
-        <h3>Full Stack Developer | Software Engineer</h3>
-        <button>Download Resume</button>
+        <div class="title-section">
+          <h1>STEFANO GAMBINO</h1>
+          <h3>Full Stack Developer | Software Engineer</h3>
+          <button type="button" class="btn btn-dark">Download Resume</button>
+        </div>
       </header>
-      <section>
+      <section class="about-me">
         <h3>ABOUT ME</h3>
-        <img src="https://picsum.photos/200/300" alt="Picture of Me">
+        <img src="./me.png" alt="Picture of Me">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
-      <section>
+      <section class="skills">
         <h3>SKILLS</h3>
-        <div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
+        <div class="skills-div">
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
+          <div class="icon">Icon Img</div>
         </div>
       </section>
-      <section>
-        <h3>Timeline</h3>
-        <div>Example: </div>
+      <section class="timeline">
         <img src="./timeline.JPG" alt="timeline">
       </section>
-      <section>
+      <section class="projects">
         <h3>PROJECTS</h3>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="project-display">
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+        </div>
       </section>
-      <section>
+      <section class="contact">
         <h3>CONTACT ME</h3>
-        <div>EMAIL ICON</div>
-        <div>LINKEDIN ICON</div>
-        <div>GITHUB</div>
+        <div class="contact-icons">
+          <div>EMAIL ICON</div>
+          <div>LINKEDIN ICON</div>
+          <div>GITHUB</div>
+        </div>
       </section>
     </body>
 </html>
