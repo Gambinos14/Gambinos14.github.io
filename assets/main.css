@@ -10161,7 +10161,7 @@ img::-moz-selection {
   }
 }
 
-/* Photo by Jules Bss Upsplash */
+/* Photo by Alex from Upsplash (https://unsplash.com/@worthyofelegance) */
 
 header.masthead {
   min-height: 100vh;
@@ -10169,7 +10169,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/phillipines.jpg");
+  background-image: url("../assets/img/coffee.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10198,6 +10198,11 @@ header.masthead .masthead-heading {
   }
 }
 
+@media (max-width: 768px) {
+  header.masthead {
+    min-height: 80vh;
+  }
+}
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
@@ -10225,6 +10230,7 @@ header.masthead .masthead-heading {
 #portfolio {
   padding: 3rem 0;
 }
+
 #portfolio .portfolio-item {
   width: 25rem;
   height: 15rem;
@@ -10233,6 +10239,14 @@ header.masthead .masthead-heading {
   border: 0.2rem solid rgba(0, 0, 0, 0.1);
   box-shadow: 10px 20px 20px lightgray ;
 }
+
+@media (max-width: 768px){
+  #portfolio .portfolio-item {
+    width: 100%;
+    height: auto;
+  }
+}
+
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
@@ -10309,6 +10323,9 @@ header.masthead .masthead-heading {
   opacity: 0.3;
 }
 
+.closeIcon {
+  font-size: 2rem
+}
 .timeline {
   position: relative;
   padding: 0;
@@ -10490,7 +10507,7 @@ header.masthead .masthead-heading {
   text-align: left;
   padding-left: 1rem;
   /* border: 2px solid black; */
-  width: 60%;
+  width: 100%;
   margin-top: 2rem;
   margin-bottom: 0;
 }
