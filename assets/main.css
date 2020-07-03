@@ -10192,6 +10192,27 @@ header.masthead .masthead-heading {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+/* ::after pseudoclass allows us to add styling/content AFTER the content of the selected element */
+/* content property of this class will show up inside the selected element's container */
+/* it essentially creates a "div" inside that element */
+
+header.masthead .masthead-heading::after {
+  content: "";
+  border: 2px solid white;
+  animation: blink;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 1500px) {
   header.masthead {
     padding-top: 35rem;

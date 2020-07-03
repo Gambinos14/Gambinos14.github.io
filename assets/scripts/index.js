@@ -53,25 +53,42 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
-})(jQuery); // End of use strict
 
     let i = 0
     const header = 'Stefano Gambino'
-    const timer = 500
+    const timer = 600
+    const lengthOfHeader = header.length
+    let j = lengthOfHeader - 1
+    const lastNameLength = header.split(' ')[1].length
+    let random = Math.floor(Math.random() * Math.floor(lastNameLength - 1))
+    while (random < 4) {
+      random = Math.floor(Math.random() * Math.floor(lastNameLength - 1))
+    }
 
     const displayName = () => {
-      if (i < header.length) {
+      if (header[i] === ' ') {
+        $(".masthead-heading").html($(".masthead-heading").html() + ' ')
+        i++
+        displayName()
+      } else if (i < lengthOfHeader) {
         $(".masthead-heading").html($(".masthead-heading").html() + header[i])
         i++
         setTimeout(displayName, timer)
-      } else if (i === header.length) {
-        $(".masthead-heading").html('')
-        i = 0
+      } else if (i === lengthOfHeader && j > (lengthOfHeader - 1) - random) {
+        const newString = $(".masthead-heading").html().substring(0, j)
+        $(".masthead-heading").html(newString)
+        j--
+        setTimeout(displayName, 200)
+      } else if (i === lengthOfHeader && j === (lengthOfHeader - 1) - random) {
+        i = (lengthOfHeader - random)
+        j = lengthOfHeader - 1
+        random = Math.floor(Math.random() * Math.floor(lastNameLength - 1))
+        while (random < 4) {
+          random = Math.floor(Math.random() * Math.floor(lastNameLength - 1))
+        }
         displayName()
       }
     }
 
-// displayName()
-    $(document).ready(() => {
-      displayName()
-    })
+    displayName()
+})(jQuery); // End of use strict
