@@ -477,9 +477,12 @@ mark,
   width: 75%;
 }
 
+#skills .row {
+  background-color: #fff;
+}
 h2.skills {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 .skillsText {
@@ -2488,7 +2491,7 @@ textarea.form-control {
 }
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
+  box-shadow: #212529;
 }
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
@@ -2501,34 +2504,32 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.downloadIcon {
+  font-size: 1em;
+  margin-right: 3px;
+  margin-bottom: 1px;
+}
 .btn-primary {
-  color: #fff;
-  background-color: #5bc0de;
-  border-color: #fed136;
+  color: #212529;
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: 2px 2px 5px #212529;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
+  background-color: #212529;
+  border-color: #212529;
+  box-shadow: 2px 2px 5px #fff;
 }
 .btn-primary:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
-  box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
+  color: #212529;
+  background-color: #fff;
+  border-color: #fff;
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
-}
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #fec503;
-  border-color: #f3bd01;
-}
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
+  background-color: #212529;
+  border-color: #212529;
 }
 
 .btn-secondary {
@@ -10045,9 +10046,13 @@ p {
 #experience-heading {
   margin-bottom: 5rem;
 }
+#aboutme-heading{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 .page-section h2.section-heading {
   font-size: 2.5rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading {
@@ -10064,12 +10069,12 @@ p {
   }
 }
 ::-moz-selection {
-  background: #fed136;
+  background: #212529;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #212529;
   text-shadow: none;
 }
 
@@ -10111,9 +10116,9 @@ img::-moz-selection {
   padding: 0.75rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.75rem;
-  color: #fff;
+  color: #212529;
   text-transform: uppercase;
-  background-color: #fed136;
+  background-color: #fff;
   border: 0;
   margin-left: 85%;
 }
@@ -10211,6 +10216,9 @@ header.masthead .masthead-heading {
   object-fit: fill;
 }
 
+#portfolio {
+  padding: 3rem 0;
+}
 #portfolio .portfolio-item {
   width: 25rem;
   height: 15rem;
@@ -10232,7 +10240,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(33, 37, 41, 0.5);
   align-items: center;
   justify-content: center;
   opacity: 0;
