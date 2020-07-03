@@ -5528,7 +5528,7 @@ a.close.disabled {
 }
 
 .modal-links a {
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
 }
 
@@ -10213,17 +10213,12 @@ header.masthead .masthead-heading::after {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1800px) {
   header.masthead {
-    padding-top: 35rem;
+    padding-top: 35rem !important;
   }
 }
 
-@media (max-width: 768px) {
-  header.masthead {
-    min-height: 80vh;
-  }
-}
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;

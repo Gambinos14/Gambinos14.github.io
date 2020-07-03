@@ -60,11 +60,12 @@
     const lengthOfHeader = header.length
     let j = lengthOfHeader - 1
     const lastNameLength = header.split(' ')[1].length
-    let random = Math.floor(Math.random() * Math.floor(lastNameLength - 1))
+    console.log(lastNameLength)
+    let random = Math.floor(Math.random() * lastNameLength + 1)
     while (random < 4) {
-      random = Math.floor(Math.random() * Math.floor(lastNameLength - 1))
+      random = Math.floor(Math.random() * lastNameLength + 1)
     }
-
+    console.log(random)
     const displayName = () => {
       if (header[i] === ' ') {
         $(".masthead-heading").html($(".masthead-heading").html() + ' ')
@@ -82,10 +83,11 @@
       } else if (i === lengthOfHeader && j === (lengthOfHeader - 1) - random) {
         i = (lengthOfHeader - random)
         j = lengthOfHeader - 1
-        random = Math.floor(Math.random() * Math.floor(lastNameLength - 1))
+        random = Math.floor(Math.random() * lastNameLength + 1)
         while (random < 4) {
-          random = Math.floor(Math.random() * Math.floor(lastNameLength - 1))
+          random = Math.floor(Math.random() * lastNameLength + 1)
         }
+        console.log(random)
         displayName()
       }
     }
