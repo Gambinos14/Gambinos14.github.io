@@ -10165,7 +10165,7 @@ img::-moz-selection {
 
 header.masthead {
   min-height: 100vh;
-  padding-top: 19rem;
+  padding-top: 13rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
@@ -10190,6 +10190,12 @@ header.masthead .masthead-heading {
   margin-bottom: 1.0rem;
   margin-top: 1.75rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 1500px) {
+  header.masthead {
+    padding-top: 35rem;
+  }
 }
 
 @media (min-width: 768px) {
