@@ -54,18 +54,19 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
+
     let i = 0
     const header = 'Stefano Gambino'
     const timer = 600
     const lengthOfHeader = header.length
     let j = lengthOfHeader - 1
     const lastNameLength = header.split(' ')[1].length
-    console.log(lastNameLength)
+
     let random = Math.floor(Math.random() * lastNameLength + 1)
     while (random < 4) {
       random = Math.floor(Math.random() * lastNameLength + 1)
     }
-    console.log(random)
+
     const displayName = () => {
       if (header[i] === ' ') {
         $(".masthead-heading").html($(".masthead-heading").html() + ' ')
@@ -87,7 +88,7 @@
         while (random < 4) {
           random = Math.floor(Math.random() * lastNameLength + 1)
         }
-        console.log(random)
+
         displayName()
       }
     }
